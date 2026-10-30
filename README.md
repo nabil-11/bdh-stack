@@ -46,7 +46,15 @@ Then work through the board:
 /bdh-stack:team add the first reading exercise
 ```
 
-When the work is finished, it closes with `/bdh-stack:done`, which tells you what to run next.
+It picks a size first:
+
+| Size | Example | What runs |
+| --- | --- | --- |
+| Small | One clear change | Its owner, with the fast check |
+| Medium | One feature | Only the roles the feature needs |
+| Large | Several sprints | One sprint, then it stops and shows you the result |
+
+To run every sprint in one go, say so in your request. When the work is finished, it closes with `/bdh-stack:done`, which tells you what to run next.
 
 ## Commands
 
@@ -126,6 +134,23 @@ Commit these files so the team stays with the project, and add `.bdh-stack/hando
 - Clearing between tasks keeps the conversation small.
 
 Do not clear the prompt cache: cached reads make each turn cheaper.
+
+## How it stays fast
+
+Waiting for checks usually takes longer than the team's planning, so every role follows the same rule:
+
+- Finish the edits first, then check them together.
+- Use the fast check while working: one test file, or one screen at one size.
+- Run the full check once, after the last edit.
+- Test other sizes, languages and themes only in that full check, and only on the screens that changed.
+
+Set your project's two checks under `## Checks` in `.bdh-stack/project.md`:
+
+```markdown
+## Checks
+Fast: npx vitest run src/theme
+Full: npx tsc --noEmit && npx vitest run && npx eslint src
+```
 
 ## Change it
 

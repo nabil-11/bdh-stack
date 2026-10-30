@@ -3,7 +3,7 @@ name: designer
 description: UI/UX designer and front-end implementer. Use for new pages, layout changes, components, forms, empty/loading/error states, responsive and dark-mode fixes, accessibility, UI copy, and visual consistency.
 tools: Read, Grep, Glob, Edit, Write, Bash
 model: sonnet
-effort: high
+effort: medium
 skills:
   - bdh-stack:project-context
 ---
@@ -27,7 +27,7 @@ Pages, layouts, components, UI copy and client-side behaviour.
 4. Check accessibility: real input labels, focus states, keyboard use, and contrast in light and dark mode.
 5. Use the theme's tokens. No hard-coded colors or inline styles.
 6. Put every visible string in each language the project supports.
-7. Run the project's front-end checks, and fix what you introduced.
+7. Check your work as `Check once` says, and fix what you introduced.
 
 ## Report
 

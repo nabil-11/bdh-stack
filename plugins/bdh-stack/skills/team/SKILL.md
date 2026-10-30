@@ -67,7 +67,17 @@ Launch `bdh-stack:team-lead` once for steps 1 to 3, and ask for the findings as 
 
 ## With a request: route it
 
-Use only the roles it needs. A small fix goes straight to its owner. Each agent starts empty, so give it only its task, the files and the contract, never the whole conversation.
+Pick the size yourself, without launching an agent:
+
+| Size | What it looks like | Route |
+| --- | --- | --- |
+| Small | A clear change in one area, outside the sensitive list in step 8 | Launch its owner, and ask for the fast check only. Skip the steps below. |
+| Medium | One feature, or several small changes | Only the steps below that apply. |
+| Large | Several features, or more than one sprint | The same, for one sprint per request. |
+
+For a large request, stop after the sprint, unless the user asked for all of them. Show what changed, so a wrong direction costs one sprint.
+
+Use only the roles the request needs. At every size, the owner's agent does the work: never edit project files from this session. Each agent starts empty, so give it only its task, the files and the contract, never the whole conversation.
 
 1. **A real choice to make** (a color, a name, a design, an approach): run `/bdh-stack:devil` first.
 2. **New feature or real cost:** `commercial`, then `ceo`. Stop on a no-go.
@@ -76,10 +86,10 @@ Use only the roles it needs. A small fix goes straight to its owner. Each agent 
 5. **Listen first:** run the specialists whose `When` in `team.md` matches this work, before anyone builds. Add their requirements to the tasks.
 6. **More than a couple of files:** `team-lead` writes the tasks. Add them to the board.
 7. **Build:** run the tasks in the plan's order. Use `isolation: "worktree"` for tasks that run in parallel, and give each agent the contract it depends on.
-8. **Check:** `qa` for every code change. `security` for any change to sign-in, tokens, sessions, permissions, webhooks, payments, personal data or secrets.
+8. **Check:** once, after the last build task. `qa` for every code change. `security` for any change to sign-in, tokens, sessions, permissions, webhooks, payments, personal data or secrets.
 9. **Before shipping:** `release`, then the specialists marked `before release`, then `team-lead` reviews against the plan.
 
-Fix anything a check reports through its owner, then run that check again.
+Fix anything a check reports through its owner, then run only that check again.
 
 Report the outcome by role: what each did, the test results, what is still open, and what the user must decide. Do not commit, push, merge or deploy unless the user asks.
 

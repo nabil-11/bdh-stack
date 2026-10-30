@@ -52,6 +52,10 @@ Language and tone: <how it speaks to the audience>
 ## Rules by role
 <only what is special to this project>
 
+## Checks
+Fast: <what checks one change in seconds>
+Full: <what checks everything, once per task>
+
 ## Release
 Ships to: <store, website, server, print>
 Done means: <what must be true>
