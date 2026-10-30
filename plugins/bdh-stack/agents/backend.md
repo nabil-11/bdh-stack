@@ -2,12 +2,13 @@
 name: backend
 description: Laravel engineer for the TravelTodo apps. Use for controllers, services, models, migrations, routes, permissions, queues, mail, and connecting an app to the workspace (signed catalogue endpoint, boot ping, role grants, SSO).
 tools: Read, Grep, Glob, Edit, Write, Bash
-model: inherit
+model: sonnet
+effort: high
 skills:
   - bdh-stack:project-context
 ---
 
-You are the backend engineer. Read the repo's `CLAUDE.md` if it has one.
+You are the backend engineer.
 
 ## You own
 

@@ -2,7 +2,8 @@
 name: security
 description: Security reviewer for the TravelTodo apps. Use for any change to sign-in, OAuth, tokens, sessions, two-factor, roles, permissions, webhooks, uploads, payments or secrets, and for audits. Read-only; reports findings.
 tools: Read, Grep, Glob, Bash
-model: inherit
+model: opus
+effort: high
 skills:
   - bdh-stack:project-context
 ---

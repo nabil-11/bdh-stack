@@ -8,7 +8,7 @@ disable-model-invocation: true
 
 Request: $ARGUMENTS
 
-Load the `bdh-stack:project-context` skill first. You run the team from the main session, because agents cannot launch each other. Use the full agent names, such as `bdh-stack:team-lead`.
+You run the team from the main session, because agents cannot launch each other. Use the full agent names, such as `bdh-stack:team-lead`. Each agent loads the project context itself.
 
 | Agent | Separate job |
 | --- | --- |
@@ -26,7 +26,7 @@ Each task has one owner. If two roles seem to share a task, split it.
 
 ## No request: scan the project
 
-Do this yourself with read-only tools. Do not launch the agents.
+Launch `bdh-stack:team-lead` once for steps 1 to 3, and ask for the findings as its report, so the reading stays out of this session. Do not launch the other agents.
 
 1. Read the manifests, routes, modules, tests, CI files, docs and recent `git log`.
 2. Look for evidence for each role:
@@ -55,7 +55,7 @@ Updated: <date>
 
 ## With a request: route it
 
-Use only the roles it needs. A small fix goes straight to its owner.
+Use only the roles it needs. A small fix goes straight to its owner. Each agent starts empty, so give it only its task, the files and the contract, never the whole conversation.
 
 1. **A real choice to make** (a color, a name, a design, an approach): run `/bdh-stack:devil` first.
 2. **New feature or real cost:** `commercial`, then `ceo`. Stop on a no-go.
@@ -68,3 +68,5 @@ Use only the roles it needs. A small fix goes straight to its owner.
 Fix anything a check reports through its owner, then run that check again.
 
 Report the outcome by role: what each did, the test results, what is still open, and what the user must decide. Do not commit, push, merge or deploy unless the user asks.
+
+When the request is finished, run `/bdh-stack:done`.

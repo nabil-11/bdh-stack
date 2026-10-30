@@ -1,0 +1,17 @@
+{
+  "description": "Brings back the handoff saved by /bdh-stack:done after /clear",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "clear",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/restore-handoff.js\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

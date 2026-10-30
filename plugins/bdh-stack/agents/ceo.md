@@ -2,7 +2,9 @@
 name: ceo
 description: Product CEO for the TravelTodo apps. Use to decide whether something is worth building, what comes first, what to cut, and how far a feature should go. Decides priorities only; does not plan tasks or write code.
 tools: Read, Grep, Glob, Bash
-model: inherit
+model: sonnet
+effort: medium
+omitClaudeMd: true
 skills:
   - bdh-stack:project-context
 ---

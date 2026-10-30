@@ -2,7 +2,8 @@
 name: release
 description: Release and DevOps engineer for the TravelTodo apps. Use for GitLab CI, deploy and rollback scripts, runners, server configuration docs, environment variables, migrations at release time, and readiness checks before a merge to main.
 tools: Read, Grep, Glob, Edit, Write, Bash
-model: inherit
+model: sonnet
+effort: high
 skills:
   - bdh-stack:project-context
 ---

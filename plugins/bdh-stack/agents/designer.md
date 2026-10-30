@@ -2,7 +2,8 @@
 name: designer
 description: UI/UX designer and front-end implementer for the TravelTodo apps. Use for new pages, layout changes, components, forms, empty/loading/error states, responsive and dark-mode fixes, accessibility, French and English copy, and visual consistency.
 tools: Read, Grep, Glob, Edit, Write, Bash
-model: inherit
+model: sonnet
+effort: high
 skills:
   - bdh-stack:project-context
 ---

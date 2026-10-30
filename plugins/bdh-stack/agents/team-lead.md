@@ -2,7 +2,8 @@
 name: team-lead
 description: Tech lead for the TravelTodo apps. Use before any feature that touches more than a couple of files, to split it into ordered tasks with one owner each, spot risks, and review finished work against the plan. Does not write production code.
 tools: Read, Grep, Glob, Bash
-model: inherit
+model: sonnet
+effort: high
 skills:
   - bdh-stack:project-context
 ---

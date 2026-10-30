@@ -1,7 +1,7 @@
 {
   "name": "bdh-stack",
   "displayName": "BDH-STACK",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A nine-role virtual team for the TravelTodo apps (CEO, commercial, team lead, researcher, designer, backend, QA, security, release) with separate tasks, plus a devil's advocate for every decision.",
   "author": {
     "name": "Nabil Bedhyef"

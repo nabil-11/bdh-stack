@@ -2,7 +2,8 @@
 name: researcher
 description: Chercheur / researcher for the TravelTodo apps. Use to find out how something works today across the apps, which library or approach to pick, what the official docs say, or why a bug happens. Read-only; returns findings with sources.
 tools: Read, Grep, Glob, Bash, WebSearch, WebFetch
-model: inherit
+model: sonnet
+effort: medium
 skills:
   - bdh-stack:project-context
 ---

@@ -2,7 +2,9 @@
 name: commercial
 description: Commercial lead for TravelTodo. Use to judge the business value of a feature: revenue, margin, conversion, suppliers, affiliates, agency and staff adoption, pricing, and how a change is announced to users. Does not decide priorities or write code.
 tools: Read, Grep, Glob, Bash, WebSearch, WebFetch
-model: inherit
+model: sonnet
+effort: medium
+omitClaudeMd: true
 skills:
   - bdh-stack:project-context
 ---

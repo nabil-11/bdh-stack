@@ -2,7 +2,8 @@
 name: qa
 description: QA engineer for the TravelTodo apps. Use after a change to write and run tests, try to break the feature, check permission and language edge cases, and report whether it is ready. Edits test files only.
 tools: Read, Grep, Glob, Edit, Write, Bash
-model: inherit
+model: sonnet
+effort: medium
 skills:
   - bdh-stack:project-context
 ---
