@@ -2,7 +2,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const dir = path.join(process.env.CLAUDE_PROJECT_DIR || process.cwd(), '.claude', 'bdh-stack');
+const dir = path.join(process.env.CLAUDE_PROJECT_DIR || process.cwd(), '.bdh-stack');
 const handoff = path.join(dir, 'handoff.md');
 
 if (fs.existsSync(handoff)) {

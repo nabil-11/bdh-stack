@@ -8,7 +8,7 @@
     {
       "name": "bdh-stack",
       "source": "./plugins/bdh-stack",
-      "description": "A nine-role virtual team with separate tasks, plus a devil's advocate for every decision"
+      "description": "A virtual team built for each project, plus a devil's advocate for every decision"
     }
   ]
 }

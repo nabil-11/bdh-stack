@@ -11,9 +11,11 @@ You cannot run `/clear` or `/compact`; only the user can. Your job is to leave n
 
 ## 1. Save
 
-- If `.claude/bdh-stack/tasks.md` exists, tick what is finished and add any new task you found.
+- If `.bdh-stack/tasks.md` exists, tick what is finished and add any new task you found.
 - Run `git status`. Say plainly what is uncommitted and on which branch. Do not commit.
 - If nothing was given above, take the next step from the board's first open task. If the board has none, treat it as nothing next.
+
+If this closes a sprint, also compare what shipped with the sprint's goal, and check `.bdh-stack/team.md` against the next sprint. Propose who can stop, and edit `team.md` only after the user's OK. If the next sprint needs knowledge nobody has, run `/bdh-stack:hire` with its goal. A role with no work in the next sprint costs nothing while it stays out of the tasks.
 
 ## 2. Pick
 
@@ -30,7 +32,7 @@ Use the first row that fits:
 
 ## 3. Handoff
 
-Only for the handoff row. Write `.claude/bdh-stack/handoff.md`, under 30 lines:
+Only for the handoff row. Write `.bdh-stack/handoff.md`, under 30 lines:
 
 ```markdown
 # Handoff
