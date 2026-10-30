@@ -1,0 +1,14 @@
+{
+  "name": "bdh",
+  "description": "Plugins for the TravelTodo team",
+  "owner": {
+    "name": "Nabil Bedhyef"
+  },
+  "plugins": [
+    {
+      "name": "bdh-stack",
+      "source": "./plugins/bdh-stack",
+      "description": "A nine-role virtual team with separate tasks, plus a devil's advocate for every decision"
+    }
+  ]
+}
