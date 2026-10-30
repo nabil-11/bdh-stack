@@ -21,6 +21,9 @@ To call one role directly, use `@agent-bdh-stack:<role>`.
 | `qa` | Tests and readiness | Tests only |
 | `security` | Security review | No |
 | `release` | CI, deploy, rollback, merge readiness | Yes |
+| `devil` | Takes the opposite side, finds bugs, proposes the best solution | No |
+
+The devil is a command, so run it with `/bdh-stack:devil <choice>`, not `@agent-bdh-stack:devil`.
 
 The board is saved to `.claude/bdh-stack/tasks.md` in each project.
 
