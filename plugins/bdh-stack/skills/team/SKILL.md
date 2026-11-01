@@ -10,7 +10,9 @@ Request: $ARGUMENTS
 
 You run the team from the main session, because agents cannot launch each other. Use the full agent names, such as `bdh-stack:team-lead`. Each agent loads the project context itself.
 
-Read `.bdh-stack/team.md`: it lists this project's roles, and only those roles work here. If it is missing, tell the user that `/bdh-stack:start` builds a team for this project, and use the core roles for now.
+Read `.bdh-stack/team.md`: it lists this project's roles, and only those roles work here. If it is missing, use the core roles for now, and say once that `/bdh-stack:start` builds a team for this project.
+
+If `.bdh-stack/project.md` is missing, write a short one before anything else, with no agent and no questions. Take `Concept`, `Stack` and `## Checks` from the README and the manifests, in the format `/bdh-stack:start` uses, and leave out what they do not show.
 
 | Core role | Separate job |
 | --- | --- |
@@ -90,6 +92,8 @@ Use only the roles the request needs. At every size, the owner's agent does the 
 9. **Before shipping:** `release`, then the specialists marked `before release`, then `team-lead` reviews against the plan.
 
 Fix anything a check reports through its owner, then run only that check again.
+
+If an agent hits its turn limit, its work comes back partial. Resume it once with `SendMessage`, and tell it to finish and report. If it stops again, show the user what is done and what is left.
 
 Report the outcome by role: what each did, the test results, what is still open, and what the user must decide. Do not commit, push, merge or deploy unless the user asks.
 

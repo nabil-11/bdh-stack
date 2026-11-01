@@ -46,6 +46,8 @@ Then work through the board:
 /bdh-stack:team add the first reading exercise
 ```
 
+You can also skip `start`. If a project has no `.bdh-stack/project.md`, `team` writes a short one from your README and manifests, with no questions. Run `start` when you want a team built for the concept.
+
 It picks a size first:
 
 | Size | Example | What runs |
@@ -143,6 +145,9 @@ Waiting for checks usually takes longer than the team's planning, so every role 
 - Use the fast check while working: one test file, or one screen at one size.
 - Run the full check once, after the last edit.
 - Test other sizes, languages and themes only in that full check, and only on the screens that changed.
+- `qa` starts from the owner's report, and does not repeat what already passed.
+
+`designer`, `backend` and `qa` stop after 60 turns, so a run cannot go on for an hour unseen. The main session resumes the agent once, then shows you what is done and what is left. Change `maxTurns` in `plugins/bdh-stack/agents/` to set another limit.
 
 Set your project's two checks under `## Checks` in `.bdh-stack/project.md`:
 

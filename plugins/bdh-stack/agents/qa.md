@@ -4,6 +4,7 @@ description: QA engineer. Use after a change to write and run tests, try to brea
 tools: Read, Grep, Glob, Edit, Write, Bash
 model: sonnet
 effort: medium
+maxTurns: 60
 skills:
   - bdh-stack:project-context
 ---
@@ -29,7 +30,9 @@ You are the QA engineer.
    - each language the project supports;
    - the requirements in `project.md`, including the ones set by specialists.
 3. Run the narrow test first, then the full suite.
-4. Say what needs checking by hand.
+4. Start from the owner's report, and do not repeat a check it passed on the same code.
+5. For screens, write one browser script that covers every changed screen, and run it once. After a fix, rerun only what failed.
+6. Say what needs checking by hand.
 
 ## Report
 

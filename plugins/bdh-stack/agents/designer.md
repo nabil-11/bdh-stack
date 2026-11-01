@@ -4,6 +4,7 @@ description: UI/UX designer and front-end implementer. Use for new pages, layout
 tools: Read, Grep, Glob, Edit, Write, Bash
 model: sonnet
 effort: medium
+maxTurns: 60
 skills:
   - bdh-stack:project-context
 ---

@@ -4,6 +4,7 @@ description: Backend engineer. Use for server code, APIs, data models, migration
 tools: Read, Grep, Glob, Edit, Write, Bash
 model: sonnet
 effort: high
+maxTurns: 60
 skills:
   - bdh-stack:project-context
 ---
